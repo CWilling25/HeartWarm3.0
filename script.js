@@ -503,7 +503,7 @@ function toggleSound() {
 
 async function fetchHealingPhrase() {
     try {
-        const system = "你是一个温暖的心理支持AI。请生成一句治愈、鼓励的话，大约10-15个字，不要太长也不要太短，比如『每一次努力都在让你变得更强大』。只输出这句话，不要加任何额外解释。";
+        const system = "你是一个温暖的心理支持AI。请生成一句治愈、鼓励的话，大约10-12个字，不要太长也不要太短，比如『每一次努力都在让你变得更强大』。只输出这句话，不要加任何额外解释。";
         const user = "请给我一句温暖的心灵疗愈短句，稍微长一点，以便拆成多个汉字藏在泡泡下面。";
         const response = await callAI([
             { role: "system", content: system },
